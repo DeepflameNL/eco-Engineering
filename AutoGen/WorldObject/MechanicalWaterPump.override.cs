@@ -60,7 +60,8 @@ namespace Eco.Mods.TechTree
     [RequireComponent(typeof(ForSaleComponent))]
     [Tag("Usable")]
     [Ecopedia("Crafted Objects", "Specialty", subPageName: "Mechanical Water Pump Item")]
-
+    [RepairRequiresSkill(typeof(BasicEngineeringSkill), 1)]
+    [RepairRequiresSkill(typeof(SelfImprovementSkill), 3)]
     public partial class MechanicalWaterPumpObject : WorldObject, IRepresentsItem
     {
         public virtual Type RepresentedItemType => typeof(MechanicalWaterPumpItem);
