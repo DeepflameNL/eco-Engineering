@@ -36,7 +36,7 @@
         }
 
         public override LocString DisplayNamePlural { get { return Localizer.DoStr("Wooden Gearboxes"); } }
-        public override float OriginalMaxDurability => 80;
+        public override float OriginalMaxDurability => 100;
     }
 
     [RequiresSkill(typeof(BasicEngineeringSkill), 1)]
